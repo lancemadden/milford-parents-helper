@@ -2,11 +2,13 @@ name: Auto Update Milford Parents Helper
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main ]          # run on any change to main
   schedule:
-    # Runs ~7:00 AM New York time daily (11:00 UTC during EDT)
-    - cron: '0 11 * * *'
-  workflow_dispatch: {}
+    - cron: '0 11 * * *'        # ~7:00 AM ET daily
+  workflow_dispatch: {}          # manual "Run workflow" button
+
+permissions:
+  contents: write                # <-- lets the workflow commit & push
 
 jobs:
   update-stub:
@@ -16,24 +18,18 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Update timestamps in sample_data.json (stub)
+        shell: bash
         run: |
           python - <<'PY'
           import json, datetime
-          from zoneinfo import ZoneInfo
-
           path = "sample_data.json"
-          try:
-              with open(path, "r") as f:
-                  data = json.load(f)
-          except FileNotFoundError:
-              raise SystemExit("sample_data.json not found at repo root")
-
-          now = datetime.datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d %H:%M:%S %Z")
+          with open(path, "r") as f:
+              data = json.load(f)
+          now = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
           data["generated_at"] = now
           for key in ["this_week","today","actionables","changes","activities","quinn_resources"]:
               for item in data.get(key, []):
                   item["crawled_at"] = now
-
           with open(path, "w") as f:
               json.dump(data, f, indent=2)
           PY
