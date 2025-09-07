@@ -1,1 +1,47 @@
-yaml
+name: Auto Update Milford Parents Helper
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    # Runs ~7:00 AM New York time daily (11:00 UTC during EDT)
+    - cron: '0 11 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  update-stub:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Update timestamps in sample_data.json (stub)
+        run: |
+          python - <<'PY'
+          import json, datetime
+          from zoneinfo import ZoneInfo
+
+          path = "sample_data.json"
+          try:
+              with open(path, "r") as f:
+                  data = json.load(f)
+          except FileNotFoundError:
+              raise SystemExit("sample_data.json not found at repo root")
+
+          now = datetime.datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d %H:%M:%S %Z")
+          data["generated_at"] = now
+          for key in ["this_week","today","actionables","changes","activities","quinn_resources"]:
+              for item in data.get(key, []):
+                  item["crawled_at"] = now
+
+          with open(path, "w") as f:
+              json.dump(data, f, indent=2)
+          PY
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sample_data.json
+          git commit -m "Auto-update stub timestamps [skip ci]" || echo "No changes to commit"
+          git push
