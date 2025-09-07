@@ -1,0 +1,129 @@
+{
+  "generated_at": "2025-09-06 18:11:04 EDT",
+  "this_week": [
+    {
+      "student": "Riley",
+      "school": "MHS",
+      "type": "event",
+      "title": "FAFSA Information Night",
+      "start": "2025-09-12T18:00:00-04:00",
+      "end": null,
+      "url": "https://example.com/mhs/counseling/fafsa-night",
+      "source": "MHS Counseling",
+      "crawled_at": "2025-09-06 18:11:04 EDT"
+    },
+    {
+      "student": "Quinn",
+      "school": "MMS",
+      "type": "event",
+      "title": "Spirit Week: Pajama Day",
+      "start": "2025-09-13T00:00:00-04:00",
+      "end": null,
+      "url": "https://example.com/mms/news/spirit-week",
+      "source": "MMS News",
+      "crawled_at": "2025-09-06 18:11:04 EDT"
+    },
+    {
+      "student": "Riley",
+      "school": "District",
+      "type": "notice",
+      "title": "No School \u2013 Professional Development",
+      "start": "2025-09-16T00:00:00-04:00",
+      "end": null,
+      "url": "https://example.com/district/calendar",
+      "source": "District Calendar",
+      "crawled_at": "2025-09-06 18:11:04 EDT"
+    }
+  ],
+  "today": [
+    {
+      "student": "Quinn",
+      "school": "MMS",
+      "type": "event",
+      "title": "Band Rehearsal",
+      "start": "2025-09-06T15:30:00-04:00",
+      "end": "2025-09-06T16:30:00-04:00",
+      "url": "https://example.com/mms/band/rehearsal",
+      "source": "MMS Events",
+      "crawled_at": "2025-09-06 18:11:04 EDT"
+    }
+  ],
+  "actionables": [
+    {
+      "student": "Riley",
+      "school": "MHS",
+      "type": "deadline",
+      "title": "Register for ACT (October)",
+      "due": "2025-09-20",
+      "why": "Keeps college prep timeline on track.",
+      "url": "https://example.com/mhs/testing/act-registration",
+      "source": "MHS Testing",
+      "crawled_at": "2025-09-06 18:11:04 EDT"
+    },
+    {
+      "student": "Quinn",
+      "school": "District",
+      "type": "notice",
+      "title": "Free/Reduced Lunch Application",
+      "due": null,
+      "why": "Apply if eligible; affects meal pricing.",
+      "url": "https://example.com/district/nutrition/apply",
+      "source": "Nutrition Services",
+      "crawled_at": "2025-09-06 18:11:04 EDT"
+    }
+  ],
+  "changes": [
+    {
+      "student": "Quinn",
+      "school": "MMS",
+      "type": "policy",
+      "title": "Start & Dismissal Times Updated",
+      "delta": "Dismissal moved to 2:45 PM; late bus added.",
+      "url": "https://example.com/mms/hours",
+      "source": "MMS Office",
+      "crawled_at": "2025-09-06 18:11:04 EDT"
+    }
+  ],
+  "activities": [
+    {
+      "student": "Riley",
+      "school": "MHS",
+      "type": "event",
+      "title": "Basketball Tryout Packet Release",
+      "start": "2025-10-15T00:00:00-04:00",
+      "url": "https://example.com/mhs/athletics/basketball/tryouts",
+      "source": "MHS Athletics",
+      "crawled_at": "2025-09-06 18:11:04 EDT"
+    },
+    {
+      "student": "Quinn",
+      "school": "MMS",
+      "type": "event",
+      "title": "Talent Show Sign-ups Open",
+      "start": "2025-09-18T00:00:00-04:00",
+      "url": "https://example.com/mms/activities/talent-show",
+      "source": "MMS Activities",
+      "crawled_at": "2025-09-06 18:11:04 EDT"
+    }
+  ],
+  "quinn_resources": [
+    {
+      "student": "Quinn",
+      "school": "District",
+      "type": "resource",
+      "title": "Communication Supports \u2013 Parent Guide",
+      "url": "https://example.com/ocali/communication",
+      "source": "OCALI",
+      "crawled_at": "2025-09-06 18:11:04 EDT"
+    },
+    {
+      "student": "Quinn",
+      "school": "State",
+      "type": "resource",
+      "title": "Ohio Autism Scholarship \u2013 Overview",
+      "url": "https://example.com/ohio/autism-scholarship",
+      "source": "Ohio DOE",
+      "crawled_at": "2025-09-06 18:11:04 EDT"
+    }
+  ]
+}

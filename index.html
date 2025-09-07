@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Milford Parents Helper (Stub Demo)</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./style.css">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Milford Parents Helper">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+</head>
+<body>
+  <header>
+    <div class="header-row">
+      <div class="app-title">Milford Parents Helper</div>
+      <div class="profile-toggle">
+        <button data-scope="riley" onclick="setScope('riley')">Riley</button>
+        <button data-scope="quinn" onclick="setScope('quinn')">Quinn</button>
+        <button data-scope="both" class="active" onclick="setScope('both')">Both</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="actions">
+    <button data-view="today" onclick="setView('today')">Today</button>
+    <button data-view="week" class="active" onclick="setView('week')">This Week</button>
+    <button data-view="changes" onclick="setView('changes')">Changes</button>
+    <button data-view="actionables" onclick="setView('actionables')">Actionables</button>
+    <button data-view="activities" onclick="setView('activities')">Activities</button>
+    <button data-view="quinn" onclick="setView('quinn')">Quinn</button>
+  </div>
+
+  <main class="main" role="main" aria-live="polite"></main>
+
+  <div class="footer">
+    <button onclick="refreshNow()">Refresh now</button>
+    <div class="small">Generated: <span id="generatedAt">—</span></div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
