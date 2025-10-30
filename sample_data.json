@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-29 11:10:33 UTC",
+  "generated_at": "2025-10-30 11:10:14 UTC",
   "this_week": [
     {
       "student": "Riley",
@@ -10,7 +10,7 @@
       "end": null,
       "url": "https://example.com/mhs/counseling/fafsa-night",
       "source": "MHS Counseling",
-      "crawled_at": "2025-10-29 11:10:33 UTC"
+      "crawled_at": "2025-10-30 11:10:14 UTC"
     },
     {
       "student": "Quinn",
@@ -21,7 +21,7 @@
       "end": null,
       "url": "https://example.com/mms/news/spirit-week",
       "source": "MMS News",
-      "crawled_at": "2025-10-29 11:10:33 UTC"
+      "crawled_at": "2025-10-30 11:10:14 UTC"
     },
     {
       "student": "Riley",
@@ -32,7 +32,7 @@
       "end": null,
       "url": "https://example.com/district/calendar",
       "source": "District Calendar",
-      "crawled_at": "2025-10-29 11:10:33 UTC"
+      "crawled_at": "2025-10-30 11:10:14 UTC"
     }
   ],
   "today": [
@@ -45,7 +45,7 @@
       "end": "2025-09-06T16:30:00-04:00",
       "url": "https://example.com/mms/band/rehearsal",
       "source": "MMS Events",
-      "crawled_at": "2025-10-29 11:10:33 UTC"
+      "crawled_at": "2025-10-30 11:10:14 UTC"
     }
   ],
   "actionables": [
@@ -58,7 +58,7 @@
       "why": "Keeps college prep timeline on track.",
       "url": "https://example.com/mhs/testing/act-registration",
       "source": "MHS Testing",
-      "crawled_at": "2025-10-29 11:10:33 UTC"
+      "crawled_at": "2025-10-30 11:10:14 UTC"
     },
     {
       "student": "Quinn",
@@ -69,7 +69,7 @@
       "why": "Apply if eligible; affects meal pricing.",
       "url": "https://example.com/district/nutrition/apply",
       "source": "Nutrition Services",
-      "crawled_at": "2025-10-29 11:10:33 UTC"
+      "crawled_at": "2025-10-30 11:10:14 UTC"
     }
   ],
   "changes": [
@@ -81,7 +81,7 @@
       "delta": "Dismissal moved to 2:45 PM; late bus added.",
       "url": "https://example.com/mms/hours",
       "source": "MMS Office",
-      "crawled_at": "2025-10-29 11:10:33 UTC"
+      "crawled_at": "2025-10-30 11:10:14 UTC"
     }
   ],
   "activities": [
@@ -93,7 +93,7 @@
       "start": "2025-10-15T00:00:00-04:00",
       "url": "https://example.com/mhs/athletics/basketball/tryouts",
       "source": "MHS Athletics",
-      "crawled_at": "2025-10-29 11:10:33 UTC"
+      "crawled_at": "2025-10-30 11:10:14 UTC"
     },
     {
       "student": "Quinn",
@@ -103,7 +103,7 @@
       "start": "2025-09-18T00:00:00-04:00",
       "url": "https://example.com/mms/activities/talent-show",
       "source": "MMS Activities",
-      "crawled_at": "2025-10-29 11:10:33 UTC"
+      "crawled_at": "2025-10-30 11:10:14 UTC"
     }
   ],
   "quinn_resources": [
@@ -114,7 +114,7 @@
       "title": "Communication Supports \u2013 Parent Guide",
       "url": "https://example.com/ocali/communication",
       "source": "OCALI",
-      "crawled_at": "2025-10-29 11:10:33 UTC"
+      "crawled_at": "2025-10-30 11:10:14 UTC"
     },
     {
       "student": "Quinn",
@@ -123,7 +123,7 @@
       "title": "Ohio Autism Scholarship \u2013 Overview",
       "url": "https://example.com/ohio/autism-scholarship",
       "source": "Ohio DOE",
-      "crawled_at": "2025-10-29 11:10:33 UTC"
+      "crawled_at": "2025-10-30 11:10:14 UTC"
     }
   ]
 }
